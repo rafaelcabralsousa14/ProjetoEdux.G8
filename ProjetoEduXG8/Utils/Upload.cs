@@ -19,7 +19,7 @@ namespace ProjetoEduXG8.Utils
 
             file.CopyTo(streamImagem);
 
-            return "http://localhost:----/upload/imagens/" + nomeArquivo;
+            return "https://localhost:44357/upload/imagens/" + nomeArquivo;
         }
     }
 }

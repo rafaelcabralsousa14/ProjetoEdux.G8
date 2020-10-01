@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ProjetoEduXG8.Domains;
@@ -57,6 +58,7 @@ namespace ProjetoEduXG8.Controllers
             }
         }
 
+        [Authorize(Roles = "Professor")]
         /// <summary>
         /// Adiciona um novo objetivo para determinado aluno
         /// </summary>
@@ -74,6 +76,7 @@ namespace ProjetoEduXG8.Controllers
             }
         }
 
+        [Authorize(Roles = "Professor")]
         /// <summary>
         /// Edita determinado objetivo
         /// </summary>
@@ -94,6 +97,7 @@ namespace ProjetoEduXG8.Controllers
 
         }
 
+        [Authorize(Roles = "Professor")]
         /// <summary>
         /// Deleta determinado objetivo
         /// </summary>
