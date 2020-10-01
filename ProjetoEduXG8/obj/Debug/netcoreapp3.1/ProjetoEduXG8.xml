@@ -1,0 +1,386 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ProjetoEduXG8</name>
+    </assembly>
+    <members>
+        <member name="M:ProjetoEduXG8.Controllers.CursoController.Get">
+            <summary>
+            Lista os cursos adicionados
+            </summary>
+            <returns>Lista de cursos</returns>
+        </member>
+        <member name="M:ProjetoEduXG8.Controllers.CursoController.Get(System.Guid)">
+            <summary>
+            Busca curso por seu Id
+            </summary>
+            <param name="id">Id do curso buscado</param>
+            <returns>Curso com o Id buscado</returns>
+        </member>
+        <member name="M:ProjetoEduXG8.Controllers.CursoController.Post(ProjetoEduXG8.Domains.Curso)">
+            <summary>
+            Adiciona um novo curso
+            </summary>
+            <param name="curso">Curso que será adicionado</param>
+            <returns></returns>
+        </member>
+        <member name="M:ProjetoEduXG8.Controllers.CursoController.Put(System.Guid,ProjetoEduXG8.Domains.Curso)">
+            <summary>
+            Edita um curso existente
+            </summary>
+            <param name="id">Id nova do curso</param>
+            <param name="curso">Curso que será editado</param>
+        </member>
+        <member name="M:ProjetoEduXG8.Controllers.CursoController.Delete(System.Guid)">
+            <summary>
+            Remove curso existente
+            </summary>
+            <param name="id">Id do curso que será deletado</param>
+        </member>
+        <member name="M:ProjetoEduXG8.Controllers.CurtidaController.Get">
+            <summary>
+            Lê as curtidas das Dicas
+            </summary>
+            <returns>Curtidas</returns>
+        </member>
+        <member name="M:ProjetoEduXG8.Controllers.CurtidaController.Get(System.Guid)">
+            <summary>
+            Busca o Id de uma Curtida específica
+            </summary>
+            <param name="id">Id da Curtida</param>
+            <returns>Curtida com o Id pesquisado</returns>
+        </member>
+        <member name="M:ProjetoEduXG8.Controllers.CurtidaController.Post(ProjetoEduXG8.Domains.Curtida)">
+            <summary>
+            Adiciona uma nova curtida
+            </summary>
+            <param name="curtida">Curtida a ser adicionada</param>
+        </member>
+        <member name="M:ProjetoEduXG8.Controllers.CurtidaController.Delete(System.Guid)">
+            <summary>
+            Deleta curtida pelo Id
+            </summary>
+            <param name="id">Id da curtida que será excluída</param>
+        </member>
+        <member name="M:ProjetoEduXG8.Controllers.DicaController.Get">
+            <summary>
+            Lista as dicas existentes
+            </summary>
+            <returns>Lista de dicas</returns>
+        </member>
+        <member name="M:ProjetoEduXG8.Controllers.DicaController.Get(System.Guid)">
+            <summary>
+            Busca uma dica pelo id
+            </summary>
+            <param name="id">Id que será buscado</param>
+            <returns>Dica com o Id buscado</returns>
+        </member>
+        <member name="M:ProjetoEduXG8.Controllers.DicaController.Post(ProjetoEduXG8.Domains.Dica)">
+            <summary>
+            Adiciona uma nova dica
+            </summary>
+            <param name="dica">Dica que será adicionada</param>
+        </member>
+        <member name="M:ProjetoEduXG8.Controllers.DicaController.Put(System.Guid,ProjetoEduXG8.Domains.Dica)">
+            <summary>
+            Edita determinada dica
+            </summary>
+            <param name="id">Id novo da dica</param>
+            <param name="dica">Dica que será editada</param>
+        </member>
+        <member name="M:ProjetoEduXG8.Controllers.DicaController.Delete(System.Guid)">
+            <summary>
+            Remove determinada dica
+            </summary>
+            <param name="id">Id da dica que será excluída</param>
+        </member>
+        <member name="M:ProjetoEduXG8.Controllers.InstituicaoController.Get">
+            <summary>
+            Lista as instituições adicionadas
+            </summary>
+            <returns>Lista de instituições</returns>
+        </member>
+        <member name="M:ProjetoEduXG8.Controllers.InstituicaoController.Get(System.Guid)">
+            <summary>
+            Busca instituicao por seu Id
+            </summary>
+            <param name="id">Id da instituicao buscado</param>
+            <returns>Instituição com o Id buscado</returns>
+        </member>
+        <member name="M:ProjetoEduXG8.Controllers.InstituicaoController.Post(ProjetoEduXG8.Domains.Instituicao)">
+            <summary>
+            Adiciona uma nova instituição
+            </summary>
+            <param name="instituicao">Instituição que será adicionada</param>
+        </member>
+        <member name="M:ProjetoEduXG8.Controllers.InstituicaoController.Put(System.Guid,ProjetoEduXG8.Domains.Instituicao)">
+            <summary>
+            Edita uma instituição existente
+            </summary>
+            <param name="id">Id nova da intituição</param>
+            <param name="instituicao">Instituição que será editada</param>
+        </member>
+        <member name="M:ProjetoEduXG8.Controllers.InstituicaoController.Delete(System.Guid)">
+            <summary>
+            Remove instituição existente
+            </summary>
+            <param name="id">Id da instituição que será deletada</param>
+        </member>
+        <member name="M:ProjetoEduXG8.Controllers.ObjetivoAlunoController.Get">
+            <summary>
+            Lista os objetivos de cada aluno
+            </summary>
+            <returns>Lista de objetivos de cada aluno</returns>
+        </member>
+        <member name="M:ProjetoEduXG8.Controllers.ObjetivoAlunoController.Get(System.Guid)">
+            <summary>
+            Busca determinado objetivo por seu Id
+            </summary>
+            <param name="id">Id buscado</param>
+            <returns>Objetivo com o Id pesquisado</returns>
+        </member>
+        <member name="M:ProjetoEduXG8.Controllers.ObjetivoAlunoController.Post(ProjetoEduXG8.Domains.ObjetivoAluno)">
+            <summary>
+            Adiciona um novo objetivo para determinado aluno
+            </summary>
+            <param name="objetivoaluno">Objetivo que será adicionado</param>
+        </member>
+        <member name="M:ProjetoEduXG8.Controllers.ObjetivoAlunoController.Put(System.Guid,ProjetoEduXG8.Domains.ObjetivoAluno)">
+            <summary>
+            Edita determinado objetivo
+            </summary>
+            <param name="id">Id novo do objeitvo</param>
+            <param name="objetivoaluno">Objetivo que será editado</param>
+        </member>
+        <member name="M:ProjetoEduXG8.Controllers.ObjetivoAlunoController.Delete(System.Guid)">
+            <summary>
+            Deleta determinado objetivo
+            </summary>
+            <param name="id">Id do objetivo que será deletado</param>
+        </member>
+        <member name="M:ProjetoEduXG8.Controllers.ObjetivoController.Get">
+            <summary>
+            Lista os objetivos
+            </summary>
+            <returns>Objetivos</returns>
+        </member>
+        <member name="M:ProjetoEduXG8.Controllers.ObjetivoController.Get(System.Guid)">
+            <summary>
+            Busca objetivo pelo Id
+            </summary>
+            <param name="id">Id do objetivo que está sendo buscado</param>
+            <returns></returns>
+        </member>
+        <member name="M:ProjetoEduXG8.Controllers.ObjetivoController.Post(ProjetoEduXG8.Domains.Objetivo)">
+            <summary>
+            Adiciona um novo objetivo
+            </summary>
+            <param name="objetivo">Objetivo que será adicionado</param>
+        </member>
+        <member name="M:ProjetoEduXG8.Controllers.ObjetivoController.Put(System.Guid,ProjetoEduXG8.Domains.Objetivo)">
+            <summary>
+            Edita um objetivo existente
+            </summary>
+            <param name="id">Id do novo objetivo alterado</param>
+            <param name="objetivo">Objetivo que será alterado</param>
+        </member>
+        <member name="M:ProjetoEduXG8.Controllers.ObjetivoController.Delete(System.Guid)">
+            <summary>
+            Remove um objetivo existente
+            </summary>
+            <param name="id">Id do objetivo que será excluído</param>
+        </member>
+        <member name="M:ProjetoEduXG8.Controllers.PerfilController.Get">
+            <summary>
+            Lista os perfis existentes
+            </summary>
+            <returns>Lista de perfis</returns>
+        </member>
+        <member name="M:ProjetoEduXG8.Controllers.PerfilController.Get(System.Guid)">
+            <summary>
+            Busca um perfil pelo Id
+            </summary>
+            <param name="id">Id buscado</param>
+            <returns>Perfil correspondente ao Id</returns>
+        </member>
+        <member name="M:ProjetoEduXG8.Controllers.PerfilController.Post(ProjetoEduXG8.Domains.Perfil)">
+            <summary>
+            Adiciona um novo perfil
+            </summary>
+            <param name="perfil">Perfil que será adicionado</param>
+        </member>
+        <member name="M:ProjetoEduXG8.Controllers.PerfilController.Put(System.Guid,ProjetoEduXG8.Domains.Perfil)">
+            <summary>
+            Edita um determinado perfil
+            </summary>
+            <param name="id">Novo Id do perfil</param>
+            <param name="perfil">Perfil que será editado</param>
+        </member>
+        <member name="M:ProjetoEduXG8.Controllers.PerfilController.Delete(System.Guid)">
+            <summary>
+            Deleta determinado perfil
+            </summary>
+            <param name="id">Id do perfil que será deletado</param>
+        </member>
+        <member name="M:ProjetoEduxG8.Controllers.AlunoTurmaController.Get">
+            <summary>
+            Lista os alunos adicionados
+            </summary>
+            <returns>Lista de alunos</returns>
+        </member>
+        <member name="M:ProjetoEduxG8.Controllers.AlunoTurmaController.Get(System.Guid)">
+            <summary>
+            Busca aluno por seu Id
+            </summary>
+            <param name="id">Id do aluno buscado</param>
+            <returns>Aluno com o Id buscado</returns>
+        </member>
+        <member name="M:ProjetoEduxG8.Controllers.AlunoTurmaController.Post(ProjetoEduXG8.Domains.AlunoTurma)">
+            <summary>
+            Adiciona um novo aluno
+            </summary>
+            <param name="alunoTurma">Aluno que será adicionada</param>
+        </member>
+        <member name="M:ProjetoEduxG8.Controllers.AlunoTurmaController.Put(System.Guid,ProjetoEduXG8.Domains.AlunoTurma)">
+            <summary>
+            Edita um aluno existente
+            </summary>
+            <param name="id">Id nova do aluno</param>
+            <param name="alunoTurma">Aluno que será editado</param>
+        </member>
+        <member name="M:ProjetoEduxG8.Controllers.AlunoTurmaController.Delete(System.Guid)">
+            <summary>
+            Remove um aluno existente
+            </summary>
+            <param name="id">Id do aluno que será deletado</param>
+        </member>
+        <member name="M:ProjetoEduxG8.Controllers.ProfessorTurmaController.Get">
+            <summary>
+            Lista os professores adicionados
+            </summary>
+            <returns>Lista de professores</returns>
+        </member>
+        <member name="M:ProjetoEduxG8.Controllers.ProfessorTurmaController.Get(System.Guid)">
+            <summary>
+            Busca professor por seu Id
+            </summary>
+            <param name="id">Id do professor buscado</param>
+            <returns>Professor com o Id buscado</returns>
+        </member>
+        <member name="M:ProjetoEduxG8.Controllers.ProfessorTurmaController.Post(ProjetoEduXG8.Domains.ProfessorTurma)">
+            <summary>
+            Adiciona um novo professor
+            </summary>
+            <param name="professorTurma">Professor que será adicionado</param>
+        </member>
+        <member name="M:ProjetoEduxG8.Controllers.ProfessorTurmaController.Put(System.Guid,ProjetoEduXG8.Domains.ProfessorTurma)">
+            <summary>
+            Edita um professor existente
+            </summary>
+            <param name="id">Id nova do professor</param>
+            <param name="professorTurma">Professor que será editado</param>
+        </member>
+        <member name="M:ProjetoEduxG8.Controllers.ProfessorTurmaController.Delete(System.Guid)">
+            <summary>
+            Remove um professor existente
+            </summary>
+            <param name="id">Id do professor que será deletado</param>
+        </member>
+        <member name="M:ProjetoEduxG8.Controllers.TurmaController.Get">
+            <summary>
+            Lista as turmas adicionadas
+            </summary>
+            <returns>Lista de turmas</returns>
+        </member>
+        <member name="M:ProjetoEduxG8.Controllers.TurmaController.Get(System.Guid)">
+            <summary>
+            Busca turma por seu Id
+            </summary>
+            <param name="id">Id da turma buscado</param>
+            <returns>Turma com o Id buscado</returns>
+        </member>
+        <member name="M:ProjetoEduxG8.Controllers.TurmaController.Post(ProjetoEduXG8.Domains.Turma)">
+            <summary>
+            Adiciona uma nova turma
+            </summary>
+            <param name="turma">Turma que será adicionada</param>
+        </member>
+        <member name="M:ProjetoEduxG8.Controllers.TurmaController.Put(System.Guid,ProjetoEduXG8.Domains.Turma)">
+            <summary>
+            Edita uma turma existente
+            </summary>
+            <param name="id">Id nova da turma</param>
+            <param name="turma">Turma que será editada</param>
+        </member>
+        <member name="M:ProjetoEduxG8.Controllers.TurmaController.Delete(System.Guid)">
+            <summary>
+            Remove uma turma existente
+            </summary>
+            <param name="id">Id da turma que será deletada</param>
+        </member>
+        <member name="M:ProjetoEduXAPI.Controllers.CategoriaController.Get">
+            <summary>
+            Lista as categorias adicionadas
+            </summary>
+            <returns>Lista de categorias</returns>
+        </member>
+        <member name="M:ProjetoEduXAPI.Controllers.CategoriaController.Get(System.Guid)">
+            <summary>
+            Busca categoria por seu Id
+            </summary>
+            <param name="id">Id da categoria buscada</param>
+            <returns>Categoria com o Id buscado</returns>
+        </member>
+        <member name="M:ProjetoEduXAPI.Controllers.CategoriaController.Post(ProjetoEduXG8.Domains.Categoria)">
+            <summary>
+            Adiciona uma nova categoria
+            </summary>
+            <param name="categoria">Categoria que será adicionada</param>
+        </member>
+        <member name="M:ProjetoEduXAPI.Controllers.CategoriaController.Put(System.Guid,ProjetoEduXG8.Domains.Categoria)">
+            <summary>
+            Edita uma categoria existente
+            </summary>
+            <param name="id">Id nova da categoria</param>
+            <param name="categoria">Categoria que será editada</param>
+        </member>
+        <member name="M:ProjetoEduXAPI.Controllers.CategoriaController.Delete(System.Guid)">
+            <summary>
+            Remove uma categoria existente
+            </summary>
+            <param name="id">Id da categoria que será deletada</param>
+        </member>
+        <member name="M:ProjetoEduXAPI.Controllers.UsuarioController.Get">
+            <summary>
+            Lista os usuários adicionados
+            </summary>
+            <returns>Lista de usuários</returns>
+        </member>
+        <member name="M:ProjetoEduXAPI.Controllers.UsuarioController.Get(System.Guid)">
+            <summary>
+            Busca usuario por seu Id
+            </summary>
+            <param name="id">Id do usuário buscado</param>
+            <returns>Usuário com o Id buscado</returns>
+        </member>
+        <member name="M:ProjetoEduXAPI.Controllers.UsuarioController.Post(ProjetoEduXG8.Domains.Usuario)">
+            <summary>
+            Adiciona um novo usuário
+            </summary>
+            <param name="usuario">Usuário que será adicionado</param>
+        </member>
+        <member name="M:ProjetoEduXAPI.Controllers.UsuarioController.Put(System.Guid,ProjetoEduXG8.Domains.Usuario)">
+            <summary>
+            Edita um usuário existente
+            </summary>
+            <param name="id">Id nova do usuário</param>
+            <param name="usuario">Usuário que será editado</param>
+        </member>
+        <member name="M:ProjetoEduXAPI.Controllers.UsuarioController.Delete(System.Guid)">
+            <summary>
+            Remove um usuário existente
+            </summary>
+            <param name="id">Id do usuário que será deletado</param>
+        </member>
+    </members>
+</doc>
